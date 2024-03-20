@@ -1,0 +1,28 @@
+#productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /*ax-width: 800px;*/
+  margin: auto;
+}
+.tarjeta-producto {
+  max-width: 400px;
+  text-align: center;
+  background-color: var(--acent-color-claro);
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.228);
+  transition: 200ms;
+}
+.tarjeta-producto:hover {
+  translate: 0 -10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h3,
+p {
+  margin: 6px 0;
+}
+
+.tarjeta-producto img {
+  width: 100%;
+  aspect-ratio: 1.5;
+}
