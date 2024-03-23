@@ -4,6 +4,7 @@ const precioElement = document.getElementById("precio");
 const carritoVacioElement = document.getElementById("carrito-vacio");
 const totalesContainer = document.getElementById("totales");
 const reiniciarCarritoElement = document.getElementById("reiniciar");
+const finalizarCarritoElement = document.getElementById("finalizar-compra");
 
 /** Crea las tarjetas de productos teniendo en cuenta lo guardado en localstorage */
 function crearTarjetasProductosCarrito() {
@@ -81,5 +82,12 @@ function reiniciarCarrito() {
   localStorage.removeItem("productos");
   revisarMensajeVacio();
   crearTarjetasProductosCarrito();
-  actualizarNumeroCarrito();
+}
+
+finalizarCarritoElement.addEventListener("click", finalizar);
+function finalizar() {
+  localStorage.removeItem("productos");
+  alert("Gracias por su compra!!");
+  crearTarjetasProductosCarrito();
+  revisarMensajeVacio();
 }
