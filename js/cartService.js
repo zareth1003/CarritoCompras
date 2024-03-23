@@ -25,7 +25,6 @@ function agregarAlCarrito(producto) {
       alert("producto agregado");
     } else {
       nuevoProducto = memoria[indiceProducto].cantidad++;
-      alert("producto agregado");
     }
     localStorage.setItem("productos", JSON.stringify(memoria));
     console.log(indiceProducto);
