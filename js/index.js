@@ -11,6 +11,8 @@ function crearTarjetasProductosInicio(productos) {
     <button>Agregar al carrito</button>
     `;
     contenedorTarjeta.appendChild(nuevoProducto);
+    //Hacemos que al hacer click sobre las tarjetas agregue el producto al carrio:
+    //()=> que ejecuta la funcion agregar carrito del producto que estoy enviando.
     nuevoProducto
       .getElementsByTagName("button")[0]
       .addEventListener("click", () => agregarAlCarrito(producto));
