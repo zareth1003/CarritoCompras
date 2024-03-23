@@ -70,3 +70,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.escondido {
+  display: none;
+}

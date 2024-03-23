@@ -12,6 +12,8 @@
 
 .tarjeta-producto img {
   height: 100%;
+  aspect-ratio: 1.5px;
+  margin: 10px;
 }
 
 .tarjeta-producto h3 {
@@ -23,7 +25,8 @@
   border-radius: 5px;
 }
 
-#totales {
+#totales,
+#carrito-vacio {
   text-align: center;
 }
 
